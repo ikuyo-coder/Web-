@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="10の質問でわかるWebライター適性診断">
+  <title>Webライター適性診断</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-en">Web Writer Aptitude Check</p>
+        <h1><strong>Webライター</strong><span>適 性 診 断</span></h1>
+        <p class="hero-ribbon">あなたはWebライターに向いている？</p>
+        <p class="hero-lead">今から10個の質問をします。<br>「はい」か「いいえ」で答えてください。</p>
+      </div>
+      <img src="woman-transparent.png" alt="ペンを持ちノートパソコンに向かう女性" class="hero-woman">
+    </div>
+  </header>
+
+  <main>
+    <section class="diagnosis-shell" id="diagnosis">
+      <aside class="side-column reveal">
+        <div class="steps-card">
+          <h2 class="line-title">診断の流れ</h2>
+          <ol class="steps">
+            <li class="active">
+              <span class="step-circle"><small>STEP</small><b>01</b></span>
+              <p>質問に答える<em>全10問</em></p>
+            </li>
+            <li>
+              <span class="step-circle"><small>STEP</small><b>02</b></span>
+              <p>結果を確認</p>
+            </li>
+            <li>
+              <span class="step-circle"><small>STEP</small><b>03</b></span>
+              <p>個別相談で<br>理想の働き方へ</p>
+            </li>
+          </ol>
+        </div>
+        <div class="time-card">
+          <span class="clock">◷</span>
+          <div><b>所要時間 約3分！</b><p>「はい」か「いいえ」で<br>サクッと診断できます♪</p></div>
+        </div>
+      </aside>
+
+      <div class="quiz-column">
+        <div class="quiz-header">
+          <div class="step-flag">STEP<strong id="stepFlag">01</strong></div>
+          <h2><i>⌁</i> 質問に答えましょう <i>⌁</i></h2>
+          <p class="counter"><strong id="currentNumber">1</strong><span>/ 10 問</span></p>
+        </div>
+        <div class="progress-row">
+          <div class="progress-track" aria-label="診断の進捗"><span id="progressBar"></span></div>
+          <strong class="progress-value" id="progressValue">10%</strong>
+        </div>
+
+        <article class="question-card" id="questionCard">
+          <span class="question-number" id="questionBadge">01</span>
+          <h3 id="questionText">文章の読み書きが嫌いではない</h3>
+          <div class="question-illustration">
+            <img src="woman-transparent.png" alt="女性イラスト">
+          </div>
+          <div class="answer-buttons">
+            <button class="answer-btn yes" type="button" data-score="1">はい</button>
+            <button class="answer-btn no" type="button" data-score="0">いいえ</button>
+          </div>
+          <button class="next-btn" id="nextButton" type="button" disabled>次の質問へ <span>›</span></button>
+        </article>
+
+        <section class="result-panel" id="resultPanel" hidden>
+          <p class="result-label">あなたのスコア</p>
+          <p class="score"><strong id="scoreValue">0</strong><span>/ 10</span></p>
+          <div class="result-card">
+            <span class="result-icon">✦</span>
+            <h2 id="resultTitle"></h2>
+            <div id="resultBody"></div>
+          </div>
+          <button class="retry-btn" id="continueButton" type="button">次へ <span>›</span></button>
+        </section>
+      </div>
+    </section>
+
+    <section class="cta result-cta" id="consultation" hidden>
+      <div class="cta-copy">
+        <span class="small-ribbon">診断結果をもとに</span>
+        <h2><span aria-hidden="true">💡</span>あなたの場合はどうでしょうか？</h2>
+        <p>診断結果はあくまで目安です。</p>
+        <p>今の働き方や生活環境によって、</p>
+        <ul>
+          <li>どんなジャンルが向いているのか</li>
+          <li>どのくらい稼げる可能性があるのか</li>
+          <li>何から始めればいいのか</li>
+        </ul>
+        <p>は一人ひとり違います。</p>
+        <p>もし気になる方は個別相談でお気軽にご相談ください😊</p>
+        <p class="cta-emphasis">あなたに合った働き方を一緒に考えます。</p>
+      </div>
+      <div class="cta-card">
+        <h3>あなたらしい一歩を応援します</h3>
+        <a href="https://timerex.net/s/nishijima.yuika_cde3/1b1720e2" target="_blank" rel="noopener noreferrer">
+          <span>▣</span> 個別相談はこちら <b>›</b>
+        </a>
+        <small>（タイムレックスで簡単予約）</small>
+      </div>
+    </section>
+
+    <section class="benefits reveal">
+      <div class="benefits-content">
+        <h2 class="line-title">この診断でわかること</h2>
+        <ul>
+          <li>あなたのWebライター適性レベル</li>
+          <li>あなたの強み・向いているポイント</li>
+          <li>今後の可能性とアドバイス</li>
+        </ul>
+      </div>
+      <p class="possibility">さあ、<br>あなたの可能性を<br>チェックしてみましょう！</p>
+    </section>
+
+  </main>
+
+  <footer>© 2026 Web Writer Support. All rights reserved.</footer>
+  <a class="to-top" href="#" aria-label="ページ上部へ戻る">⌃</a>
+</body>
+</html>
